@@ -1,302 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Explore Vishnu</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Explore Vishnu</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/me.JPG" alt=" Vishnu's picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Polepalli Vishnu Sai</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Vishnu_Resume1.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/contact-vishnu/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/vishnu7899'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/18.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Intern at PonContra <br />Frontend Development<br>(Present)</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.E. Computer science and engineering<br />(Final year)</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              As a computer science student, 
-                I am eager to apply my knowledge to real-world projects
-                 in web development and software development.
-                Seeking opportunities as a fresher
-                 to contribute, learn, and make an impact in a dynamic and innovative environment.
-            </p>
-          </div>
-        </div>
-      </div>
-     
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="/assets/images/portfolio..jpg" type="image/x-icon">--> 
+    <title>Vishnu's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    
+    <div id="main-wrapper">
+       <div class="columns-block">
+        <div class="left-col-block">
+            <div class="header">
+                <div class="content" >
+                    <h1>Hi, I'm Polepalli Vishnu Sai</h1>
+                    <p class="lead">Software Developer</p>
+                    <ul class="social-icon">
+                        <li><a href="mailto:polepallivishnu78@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="https://www.instagram.com/vishnuuu7777/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/vishnu7899"><i class="fa-brands fa-square-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/contact-vishnu/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        
+                    </ul>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Github</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Other Software Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySql</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Non-Tecnical Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>leadership</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Time Management</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Adaptability</h3>
-                </div>
-              </article>
-        </div>
-      </div>
+                <div class="profile-image">
 
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:Polepallivishnu78@gmail.com">Polepallivishnu78@gmail.com</a></p>
+                </div>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/contact-vishnu/">LinkedIn</a></p>
-        <div class="contact-info-container">
-          <img
-            src="./assets/phone.jpg"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <a href="tel:+917899764116">+91 7899764116</a>
+        <div class="right-col-block">   
+            <div class="section-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <h2>🧔‍♂️About Me</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                           <p>Dynamic and results-driven Computer Science student with a solid programming foundation and a keen interest in emerging technologies. Proficient in software development, problem-solving, and teamwork, with practical experience in creating innovative solutions. Aspiring to contribute to groundbreaking projects and refine skills in a fast-paced, technology-driven environment.</p>
+                            <div class="d-grid gap-2 col-4">
+                                <button class="btn btn-primary" type="button"><a href="assets/Vishnu_Resume1.pdf">Download Resume</a></button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-      </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <section class="section-wrapper grey-bg">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <h2><u>Expertise</u></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="expertise-item">
+                                <h3>Front-End Development</h3>
+                                <p>Proficient in HTML, CSS, and JavaScript for creating responsive web applications.
+                                   </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="expertise-item">
+                                <h3>Back-End Development</h3>
+                                <p>Knowledge of server-side programming languages such as C, Java.
+                                    Familiarity with database management (e.g. MySQL).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="expertise-item">
+                                <h3>Version Control</h3>
+                                <p>Experience using Git for version control and collaboration on coding projects.
+                                    Understanding of GitHub for project management and code sharing.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="expertise-item">
+                                <h3>Soft Skills</h3>
+                                <p>Teamwork, communication, Adaptability, Time Management, Problem-Solving, Decision Making.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <h2><u>Skills</u></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="">Core-Java</label>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">C</label>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">HTML,CSS</label>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">MySQL</label>
+                            <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                              </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-wrapper grey-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2><u>Projects</u></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="carouselExampleCaptions" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <a href="https://github.com/vishnu7899/Bitm_College"><img src="/assets/ipl1.png" class="d-block w-100" alt="..."></a>
+                                     <div class="carousel-caption d-none d-md-block">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <a href="https://github.com/vishnu7899/Bitm_College"><img src="/assets/student.png" class="d-block w-100" alt="..."></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                        </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <a href="https://github.com/vishnu7899/Bitm_College"><img src="/assets/billing.png" class="d-block w-100" alt="..."></a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                        </div>
+                                      </div>
+                        
+                                      
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section>
+                <div class="section-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>🎓Education</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="expertise-item">
+                                    <h3>B.E in Computer Science and Engineering</h3>
+                                    <h3>Ballari Institute of Technology and Management</h3>
+                                    <p>2020-2024</p>
+                                    <p>CGPA-7.69</p>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="expertise-item">
+                                    <h3>Pre-University(PCMB - 12th)</h3>
+                                    <h3>Pupil Tree PU college</h3>
+                                    <p>2018-2020</p>
+                                    <p>Percentage-69.5%</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="expertise-item">  
+                                    <h3>Secondary School (SSLC - 10th)</h3>  
+                                    <h3>Dream World School</h3>
+                                    <p>2018</p>
+                                    <p>Percentage-67.6%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="section-wrapper grey-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>Contact Me</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="expertise-item">
+                                    <h3>Address</h3>
+                                    <p>Prashant layout Sudha cross contolment , Ballari-583104</p>
+                                    
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <h3>Email</h3>
+                                    <p>polepallivishnu78@gmail.com</p>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="expertise-item">
+                                    <h3>Phone</h3>
+                                    <p>+917899764116</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                            </div>
+                        </div>
+            </section>
+            <section>
+                <div class="section-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-title">
+                                    <h2>🤝Get in touch</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Web3Forms Form -->
+                                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="d0475ed1-78bb-40c9-8e7d-f79c5282a068">
+                                    
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Your Subject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Input your message here" rows="3" required></textarea>
+                                    </div>
+                                    
+                                    <div class="d-grid gap-2 col-4">
+                                        <button class="btn btn-primary" type="submit">Submit 🙋‍♂️</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+            <footer>
+                <div class="section-wrapper grey-bg">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>&copy; 2024 Polepalli Vishnu Sai. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 Polepalli Vishnu Sai. All Rights Reserved.</p>
-    </footer>
+
+       </div>
+    </div>
+
+
     <script src="script.js"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/js/fontawesome.min.js" integrity="sha512-VHzNRuyh7JTxbZKfVfNMcpykOewZElNlfdKh+OhIKKcHdgZqtusYNek3RIoKujnycuUB49x4QhzptDQQqky9cQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>
