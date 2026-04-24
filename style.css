@@ -159,7 +159,7 @@ html[data-theme="dark"] .icon-moon { display: none; }
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: .14em;
-  font-size: 12px;
+  font-size: 25px;
   font-weight: 600;
   color: var(--primary);
   margin: 0 0 16px;
@@ -463,7 +463,7 @@ html[data-theme="dark"] .icon-moon { display: none; }
   background: color-mix(in srgb, var(--primary) 6%, transparent);
 }
 
-/* ---------- TOAST ---------- */
+
 .toast {
   position: fixed;
   bottom: 24px;
